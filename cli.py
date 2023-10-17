@@ -66,12 +66,12 @@ d88P     888  "Y88888  "Y888 "Y88P"   "Y8888P88 888           888
     try:
         # Check if GitHub user name is configured
         user_name = (
-            subprocess.check_output(["git", "config", "user.name"])
+            subprocess.check_output(["git", "config", "hurste"])
             .decode("utf-8")
             .strip()
         )
         user_email = (
-            subprocess.check_output(["git", "config", "user.email"])
+            subprocess.check_output(["git", "config", "Hurste04@gmail.com"])
             .decode("utf-8")
             .strip()
         )
@@ -99,12 +99,12 @@ d88P     888  "Y88888  "Y888 "Y88P"   "Y8888P88 888           888
         )
         click.echo(
             click.style(
-                '  git config --global user.name "Your GitHub Username"', fg="red"
+                '  git config --global user.name "hurste"', fg="red"
             )
         )
         click.echo(
             click.style(
-                '  git config --global user.email "Your GitHub Email"', fg="red"
+                '  git config --global user.email "Hurste04@gmail.com"', fg="red"
             )
         )
         install_error = True
